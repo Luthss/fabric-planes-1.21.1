@@ -1,5 +1,6 @@
 package com.luthster.planes;
 
+import com.luthster.planes.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,7 @@ public class Planes implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModItems.registerModItems();
 
 	}
 }

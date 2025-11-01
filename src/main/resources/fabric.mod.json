@@ -22,7 +22,7 @@
 			"com.luthster.planes.PlanesDataGenerator"
 		],
         "client": [
-          "com.luthster.planes.planesClient"
+          "com.luthster.planes.PlanesClient"
         ]
 	},
 	"mixins": [

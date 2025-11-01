@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "planes",
+	"version": "${version}",
+	"name": "Planes",
+	"description": "My attempt at planes",
+	"authors": [
+		"Luth"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/planes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.luthster.planes.Planes"
+		],
+		"fabric-datagen": [
+			"com.luthster.planes.PlanesDataGenerator"
+		],
+        "client": [
+          "com.luthster.planes.planesClient"
+        ]
+	},
+	"mixins": [
+		"planes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
